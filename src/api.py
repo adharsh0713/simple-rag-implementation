@@ -27,6 +27,14 @@ def home():
 @app.post("/ask")
 def ask(data: Question):
 
-    return rag.ask(
-        data.question
-    )
+    try:
+
+        return rag.ask(
+            data.question
+        )
+
+    except Exception as e:
+
+        return {
+            "error": str(e)
+        }

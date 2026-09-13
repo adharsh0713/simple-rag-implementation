@@ -1,4 +1,5 @@
 from sentence_transformers import SentenceTransformer
+import numpy as np
 
 
 model = SentenceTransformer(
@@ -6,15 +7,8 @@ model = SentenceTransformer(
 )
 
 
-def create_embeddings(items):
+def create_embeddings(texts):
 
-    texts = []
+    vectors = model.encode(texts)
 
-    for item in items:
-
-        if isinstance(item, dict):
-            texts.append(item["text"])
-        else:
-            texts.append(item)
-
-    return model.encode(texts)
+    return np.array(vectors)

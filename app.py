@@ -20,7 +20,17 @@ if st.button("Ask"):
     )
 
 
-    result = response.json()
+    print(response.status_code)
+    print(response.text)
+
+    if response.status_code == 200:
+
+        result = response.json()
+
+    else:
+
+        st.error(response.text)
+        st.stop()
 
 
     st.subheader("Answer")

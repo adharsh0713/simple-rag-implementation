@@ -14,9 +14,10 @@ chunks = create_chunks(
     "rag_test_document.pdf"
 )
 
+texts = [chunk["text"] for chunk in chunks]
 
 vectors = create_embeddings(
-    chunks
+    texts
 )
 
 

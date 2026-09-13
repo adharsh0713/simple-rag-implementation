@@ -22,15 +22,21 @@ class RAG:
 
 
         results = self.store.search(
-            query_vector,
-            k=3
+            query_vector
         )
+
+
+        if not results:
+            return {
+                "answer": "No relevant information found.",
+                "sources": []
+            }
 
 
         context = "\n\n".join(
             [
-                r["text"]
-                for r in results
+                item["chunk"]["text"]
+                for item in results
             ]
         )
 
@@ -43,10 +49,11 @@ class RAG:
 
         sources = [
             {
-                "source": r["source"],
-                "page": r["page"]
+                "source": item["chunk"]["source"],
+                "page": item["chunk"]["page"],
+                "score": item["score"]
             }
-            for r in results
+            for item in results
         ]
 
 

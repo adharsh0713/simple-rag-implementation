@@ -16,7 +16,7 @@ class VectorStore:
 
         dimension = vectors.shape[1]
 
-        self.index = faiss.IndexFlatL2(
+        self.index = faiss.IndexFlatIP(
             dimension
         )
 
@@ -25,14 +25,19 @@ class VectorStore:
         self.chunks = chunks
 
 
-    def search(self, query_vector, k=3):
+    def search(
+        self,
+        query_vector,
+        k=5,
+        threshold=0.35
+    ):
 
         query_vector = np.array(
             [query_vector]
         ).astype("float32")
 
 
-        distances, indices = self.index.search(
+        scores, indices = self.index.search(
             query_vector,
             k
         )
@@ -40,10 +45,22 @@ class VectorStore:
 
         results = []
 
-        for index in indices[0]:
-            results.append(
-                self.chunks[index]
-            )
+
+        for score, index in zip(
+            scores[0],
+            indices[0]
+        ):
+
+            print("score:", score)
+            if score >= threshold:
+
+                results.append(
+                    {
+                        "chunk": self.chunks[index],
+                        "score": float(score)
+                    }
+                )
+
 
         return results
 
