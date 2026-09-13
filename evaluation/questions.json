@@ -1,0 +1,38 @@
+[
+    {
+        "question": "What is machine learning?",
+        "expected_topic": "machine learning"
+    },
+    {
+        "question": "Explain supervised learning with examples.",
+        "expected_topic": "supervised learning"
+    },
+    {
+        "question": "What is the difference between supervised and unsupervised learning?",
+        "expected_topic": "learning types"
+    },
+    {
+        "question": "What are the main components of a neural network?",
+        "expected_topic": "neural networks"
+    },
+    {
+        "question": "What is deep learning?",
+        "expected_topic": "deep learning"
+    },
+    {
+        "question": "What are common applications of NLP?",
+        "expected_topic": "natural language processing"
+    },
+    {
+        "question": "Explain the RAG pipeline.",
+        "expected_topic": "retrieval augmented generation"
+    },
+    {
+        "question": "What are embeddings in machine learning?",
+        "expected_topic": "vector embeddings"
+    },
+    {
+        "question": "Why is chunking important in RAG?",
+        "expected_topic": "chunking"
+    }
+]

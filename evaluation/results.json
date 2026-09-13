@@ -1,0 +1,222 @@
+{
+    "timestamp": "2026-09-13 20:26:19.927565",
+    "results": [
+        {
+            "question": "What is machine learning?",
+            "answer": "Machine Learning is a branch of Artificial Intelligence that enables computers to learn patterns from data and make predictions or decisions without being explicitly programmed.",
+            "sources": [
+                {
+                    "source": "rag_test_document.pdf",
+                    "page": 1,
+                    "score": 0.8563239574432373
+                },
+                {
+                    "source": "rag_test_document.pdf",
+                    "page": 1,
+                    "score": 0.5346757173538208
+                },
+                {
+                    "source": "rag_test_document.pdf",
+                    "page": 2,
+                    "score": 0.4170891046524048
+                },
+                {
+                    "source": "rag_test_document.pdf",
+                    "page": 2,
+                    "score": 0.41529202461242676
+                },
+                {
+                    "source": "rag_test_document.pdf",
+                    "page": 1,
+                    "score": 0.41299694776535034
+                }
+            ],
+            "top_score": 0.8563239574432373
+        },
+        {
+            "question": "Explain supervised learning with examples.",
+            "answer": "Supervised learning uses labeled datasets where each training example contains input data and the correct output. This allows the machine to learn from examples and make predictions or decisions. \n\nExamples of supervised learning include:\n\n\u2022 Email spam detection\n\u2022 House price prediction\n\u2022 Image classification\n\nCommon algorithms used in supervised learning include:\n\n\u2022 Linear Regression\n\u2022 Logistic Regression\n\u2022 Decision Trees\n\u2022 Support Vector Machines",
+            "sources": [
+                {
+                    "source": "rag_test_document.pdf",
+                    "page": 1,
+                    "score": 0.5907266139984131
+                },
+                {
+                    "source": "rag_test_document.pdf",
+                    "page": 1,
+                    "score": 0.5353663563728333
+                },
+                {
+                    "source": "rag_test_document.pdf",
+                    "page": 1,
+                    "score": 0.42265239357948303
+                },
+                {
+                    "source": "rag_test_document.pdf",
+                    "page": 3,
+                    "score": 0.3900653123855591
+                },
+                {
+                    "source": "rag_test_document.pdf",
+                    "page": 2,
+                    "score": 0.36972206830978394
+                }
+            ],
+            "top_score": 0.5907266139984131
+        },
+        {
+            "question": "What is the difference between supervised and unsupervised learning?",
+            "answer": "The difference between supervised and unsupervised learning is that:\n\n* Supervised learning uses labeled datasets where each training example contains input data and the correct output, allowing the algorithm to learn from the data and make predictions or decisions.\n* Unsupervised learning works with data that does not have predefined labels, and the goal is to discover hidden patterns in the data.",
+            "sources": [
+                {
+                    "source": "rag_test_document.pdf",
+                    "page": 1,
+                    "score": 0.5332250595092773
+                },
+                {
+                    "source": "rag_test_document.pdf",
+                    "page": 1,
+                    "score": 0.5288322567939758
+                },
+                {
+                    "source": "rag_test_document.pdf",
+                    "page": 1,
+                    "score": 0.424533486366272
+                }
+            ],
+            "top_score": 0.5332250595092773
+        },
+        {
+            "question": "What are the main components of a neural network?",
+            "answer": "The main components of a neural network are:\n\n1. Input Layer\n2. Hidden Layers\n3. Output Layer\n\nThese components are responsible for receiving raw data, performing mathematical transformations, and producing the final prediction, respectively.",
+            "sources": [
+                {
+                    "source": "rag_test_document.pdf",
+                    "page": 2,
+                    "score": 0.5571136474609375
+                },
+                {
+                    "source": "rag_test_document.pdf",
+                    "page": 2,
+                    "score": 0.5029616355895996
+                }
+            ],
+            "top_score": 0.5571136474609375
+        },
+        {
+            "question": "What is deep learning?",
+            "answer": "Deep Learning is a subset of machine learning that uses neural networks with many layers.",
+            "sources": [
+                {
+                    "source": "rag_test_document.pdf",
+                    "page": 2,
+                    "score": 0.7010066509246826
+                },
+                {
+                    "source": "rag_test_document.pdf",
+                    "page": 1,
+                    "score": 0.5730814933776855
+                },
+                {
+                    "source": "rag_test_document.pdf",
+                    "page": 3,
+                    "score": 0.4537851810455322
+                },
+                {
+                    "source": "rag_test_document.pdf",
+                    "page": 5,
+                    "score": 0.3950890898704529
+                },
+                {
+                    "source": "rag_test_document.pdf",
+                    "page": 2,
+                    "score": 0.38727134466171265
+                }
+            ],
+            "top_score": 0.7010066509246826
+        },
+        {
+            "question": "What are common applications of NLP?",
+            "answer": "Common applications of NLP include:\n\n1. Chatbots\n2. AI assistants\n3. Translation systems",
+            "sources": [
+                {
+                    "source": "rag_test_document.pdf",
+                    "page": 3,
+                    "score": 0.5962141156196594
+                },
+                {
+                    "source": "rag_test_document.pdf",
+                    "page": 4,
+                    "score": 0.5315417647361755
+                },
+                {
+                    "source": "rag_test_document.pdf",
+                    "page": 3,
+                    "score": 0.42083635926246643
+                },
+                {
+                    "source": "rag_test_document.pdf",
+                    "page": 5,
+                    "score": 0.3745080530643463
+                }
+            ],
+            "top_score": 0.5962141156196594
+        },
+        {
+            "question": "Explain the RAG pipeline.",
+            "answer": "No relevant information found.",
+            "sources": [],
+            "top_score": 0
+        },
+        {
+            "question": "What are embeddings in machine learning?",
+            "answer": "Embeddings convert text into numerical vectors. Similar meanings produce similar vectors.",
+            "sources": [
+                {
+                    "source": "rag_test_document.pdf",
+                    "page": 1,
+                    "score": 0.5426908731460571
+                },
+                {
+                    "source": "rag_test_document.pdf",
+                    "page": 1,
+                    "score": 0.5254395604133606
+                },
+                {
+                    "source": "rag_test_document.pdf",
+                    "page": 4,
+                    "score": 0.4757592976093292
+                },
+                {
+                    "source": "rag_test_document.pdf",
+                    "page": 3,
+                    "score": 0.41903984546661377
+                },
+                {
+                    "source": "rag_test_document.pdf",
+                    "page": 2,
+                    "score": 0.4112016558647156
+                }
+            ],
+            "top_score": 0.5426908731460571
+        },
+        {
+            "question": "Why is chunking important in RAG?",
+            "answer": "Good chunking improves retrieval accuracy.",
+            "sources": [
+                {
+                    "source": "rag_test_document.pdf",
+                    "page": 4,
+                    "score": 0.4905218482017517
+                },
+                {
+                    "source": "rag_test_document.pdf",
+                    "page": 5,
+                    "score": 0.44588857889175415
+                }
+            ],
+            "top_score": 0.4905218482017517
+        }
+    ]
+}

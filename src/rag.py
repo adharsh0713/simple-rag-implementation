@@ -56,6 +56,15 @@ class RAG:
             for item in results
         ]
 
+        for item in results:
+
+            print(
+                {
+                    "score": item["score"],
+                    "source": item["chunk"]["source"],
+                    "page": item["chunk"]["page"]
+                }
+            )
 
         return {
             "answer": answer,
